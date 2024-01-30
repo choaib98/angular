@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex mx-auto" (ngSubmit)="search()">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="selectedText" name="searchText">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="ekart-search-result-for">
+  <p><strong>Search result for:</strong> Mens wears {{ selectedText }}</p>
+</div>
+
+<div class="ekart-product-container-header">
+  <h2>SHOES</h2>
+</div>

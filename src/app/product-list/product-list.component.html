@@ -1,3 +1,4 @@
+<!--
 <img [src]="product.pImage">
 
 <p>Name = {{ product.name }}</p>
@@ -7,4 +8,11 @@
 <p>{{ product.stock > 0 ? ' Only ' + product.stock + ' in stock' : 'Not in stock' }}</p>
 
 <button [disabled]="product.stock<=0">Click</button>
-<input [value]="cName">
+<input [value]="cName" (input)="onNameChange($event)" > <br>
+{{cName}}
+<br>
+<button (click)="add()">+</button>
+{{counter}}
+<button (click)="min()">-</button>
+-->
+<app-search></app-search>
