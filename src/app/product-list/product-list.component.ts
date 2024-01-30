@@ -16,6 +16,7 @@ export class ProductListComponent {
   }
   cName: string = "choaib";
   counter:number=0;
+  list:string[]=['choaib','youssef','zoubir'];
   getDiscountedPrice() {
     return this.product.price - (this.product.price * this.product.discount / 100);
   }

@@ -16,3 +16,12 @@
 <button (click)="min()">-</button>
 -->
 <app-search></app-search>
+
+<div *ngFor="let name of list">
+  <p>The name is {{name}}</p>
+</div>
+<div >
+  <select >
+    <option *ngFor="let name of list">{{name}}</option>
+  </select>
+</div>
