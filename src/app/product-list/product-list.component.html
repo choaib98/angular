@@ -1,0 +1,10 @@
+<img [src]="product.pImage">
+
+<p>Name = {{ product.name }}</p>
+<p>price = {{ product.price }}</p>
+<p>color = {{ product.color }}</p>
+<p>discount Price = {{ getDiscountedPrice() }}</p>
+<p>{{ product.stock > 0 ? ' Only ' + product.stock + ' in stock' : 'Not in stock' }}</p>
+
+<button [disabled]="product.stock<=0">Click</button>
+<input [value]="cName">
