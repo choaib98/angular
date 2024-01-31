@@ -62,9 +62,9 @@ font-weight: bold;
 
 }
 .ekart--product--name{
-  font-size: 14;
-  color: #28282;
-  margin-top: 7;
+  font-size: 14px;
+  color: #282822;
+  margin-top: 7px;
 }
 .ekart--product--category,.ekart--product--available-colors{
   font-size: 12px;
