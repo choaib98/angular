@@ -21,7 +21,8 @@
   margin-left: -5px;
   color:#fff;
 }
-• ekart-search-result-for{
+.ekart-search-result-for{
   margin: 20px auto;
-  padding: 10px 140px;
+  text-align: center;
+  width: 60%; /* Adjust the width as per your design */
 }

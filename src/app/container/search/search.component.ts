@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  selectedText: string = "nike";
+  selectedText: string = "";
 
   search() {
     // Handle the form submission logic here, for example, navigate to a search results page
