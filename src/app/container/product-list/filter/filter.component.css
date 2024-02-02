@@ -1,0 +1,22 @@
+.filter-container {
+  margin: 18px 8px;
+  padding: 8px 28vh;
+  display: flex;
+  align-items: center;
+}
+
+.filter-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.filter-option {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-option span {
+  margin-left: 5px;
+}

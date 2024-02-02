@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
   selectedText: string = "";
+
+  @Output()
+  changedText : EventEmitter<string> = new EventEmitter<string>();
+
+  onChangedText(){
+    this.changedText.emit(this.selectedText);
+  }
 
   search() {
     // Handle the form submission logic here, for example, navigate to a search results page
