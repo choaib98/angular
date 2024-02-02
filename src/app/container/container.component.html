@@ -15,7 +15,7 @@
 {{counter}}
 <button (click)="min()">-</button>
 -->
-<app-search></app-search>
+<app-search (changedText)="handleCustomEvent($event)"></app-search>
 
 <!--<div *ngFor="let name of list">
   <p>The name is {{name}}</p>

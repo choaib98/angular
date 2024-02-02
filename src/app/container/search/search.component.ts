@@ -11,6 +11,10 @@ export class SearchComponent {
   @Output()
   changedText : EventEmitter<string> = new EventEmitter<string>();
 
+  onChangedText(){
+    this.changedText.emit(this.selectedText);
+  }
+
   search() {
     // Handle the form submission logic here, for example, navigate to a search results page
     console.log("Searching for:", this.selectedText);
